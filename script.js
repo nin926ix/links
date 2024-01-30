@@ -42,3 +42,27 @@ document.addEventListener('DOMContentLoaded', () => {
         secondInterval = setInterval(animateSecondNumber, 600);
     }, 1000);
 });
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const video = document.getElementById('backgroundVideo');
+//     const content = document.getElementById('content');
+//
+//     // Function to adjust video playback
+//     function adjustVideoPlayback() {
+//         let scrollPercentage = content.scrollTop / (content.scrollHeight - content.clientHeight);
+//         let videoTime = video.duration * scrollPercentage;
+//         console.log(videoTime)
+//         video.currentTime = videoTime;
+//     }
+//
+//     // Check if content is scrollable
+//     if (content.scrollHeight > content.clientHeight) {
+//         content.addEventListener('scroll', function() {
+//             adjustVideoPlayback();
+//         });
+//     }
+// });
+
+
+
