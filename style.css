@@ -36,6 +36,7 @@ body {
     min-width: 100vw;
     min-height: 100vh;
     z-index: -1;
+    brightness(100%) saturate(60%) blur(4px)
 }
 
 #backgroundVideo {
@@ -80,6 +81,28 @@ body {
     text-align: center;
     text-decoration: none;
 }
+
+
+/*other style*/
+canvas {
+    display: block;
+    cursor: crosshair;
+}
+
+/*other style*/
+
+.events {
+    margin-top: 20px;
+}
+
+#links {
+    margin-top: 20px;
+}
+
+#tracks {
+    margin-top: 20px;
+}
+
 
 #links {
     width: inherit;
@@ -183,9 +206,10 @@ body {
     display: flex;
     flex-direction: row;
     background-color: #f5f5f5;
-    padding: 20px 10px;
+    padding: 30px 10px;
     border-radius: 4px;
     gap: 20px;
+    align-items: center
 }
 
 .youtube-description-container{
@@ -274,7 +298,7 @@ body {
 .events {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     align-items: center;
     gap: 1em;
 }
@@ -287,4 +311,5 @@ body {
     border: 1px solid;
     padding: 0.25em;
     transform: rotate(-0.005turn);
+    cursor: default;
 }
