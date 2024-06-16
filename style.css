@@ -143,6 +143,7 @@ canvas {
     .link:hover {
         background-color: var(--accentColor);
         color: var(--bgColor);
+        transform: scale(1.02);
     }
 }
 
@@ -195,7 +196,7 @@ canvas {
     display: flex;
     flex-direction: column;
     gap: 0.75em;
-    backdrop-filter: blur(5px) brightness(80%);
+    backdrop-filter: blur(10px) brightness(75%);
     background-color: rgba(255, 255, 255, 0.1); /* Slight white tint */
     border-radius: 15px; /* Optional, for rounded corners */
     font-family: 'Inter', sans-serif;
@@ -205,11 +206,15 @@ canvas {
 .youtube-container{
     display: flex;
     flex-direction: row;
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
     padding: 30px 10px;
     border-radius: 4px;
     gap: 20px;
     align-items: center
+}
+
+.youtube-container:hover {
+    transform: scale(1.01);
 }
 
 .youtube-description-container{
@@ -221,20 +226,33 @@ canvas {
     font-size: 15px;
     line-height: 18px;
     text-decoration: none;
-    color: #333;
+    color: white;
+    width: fit-content;
+}
+
+.youtube-video-title:hover {
+    background-color: white;
+    color: black;
 }
 
 .youtube-link{
-    color: #666;
+    color: white;
     font-size: 12px;
     line-height: 16px;
+    width: fit-content;
+}
+
+.youtube-link:hover {
+    background-color: white;
+    color: black;
 }
 
 .youtube-video-description {
     display: flex;
     flex-direction: row;
     font-size: 16px;
-    color: #666;
+    color: black;
+    cursor: default;
     font-variant: all-petite-caps;
     font-style: italic;
     margin-top: 30px;
@@ -307,9 +325,22 @@ canvas {
     font-weight: 600;
 }
 
+.event-links {
+    font-weight: 600;
+    color: inherit;
+}
+
+.event-links:hover {
+    background-color: rgba(256, 256, 256, 0.5);
+}
+
 .single-event {
     border: 1px solid;
     padding: 0.25em;
     transform: rotate(-0.005turn);
     cursor: default;
+}
+
+.single-event:hover {
+    transform: scale(1.20);
 }
