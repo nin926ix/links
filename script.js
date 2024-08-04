@@ -217,3 +217,22 @@ setup();
 draw(1);
 
 document.getElementById('arrow').addEventListener('click', scrollDown);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('backgroundVideo');
+    var fallbackImage = document.getElementById('backgroundImage');
+
+    // Attempt to play the video
+    var playPromise = video.play();
+
+    if (playPromise !== undefined) {
+        playPromise.then(_ => {
+            // Video is playing, do nothing
+        }).catch(error => {
+            // Video failed to play, show fallback image
+            video.style.display = 'none'; // Hide the video
+            fallbackImage.style.display = 'block'; // Show the fallback image
+        });
+    }
+});
