@@ -1,186 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MARKO KONTAKT</title>
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <!-- Core theme CSS -->
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+  />
+  <title>MARKO KONTAKT</title>
 
-  <body>
+  <!-- Favicon (optional) -->
+  <link
+          rel="icon"
+          href="favicon.ico"
+          type="image/x-icon"
+  />
 
-    <div class="video-container">
-      <video id="backgroundVideo" autoplay playsinline muted loop>
-        <source src="bg.webm" type="video/webm">
-        <source src="bg.mp4" type="video/mp4">
-      </video>
-      <img id="backgroundImage" src="bg.jpeg">
+  <!-- Font Awesome icons -->
+  <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Custom JS -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<!-- VIDEO CONTAINER (abstract black & white bg) -->
+<div class="video-container">
+  <video
+          id="bgVideo"
+          autoplay
+          muted
+          loop
+          playsinline
+  >
+    <source src="bg.webm" type="video/webm" />
+    <source src="bg.mp4" type="video/mp4" />
+    <!-- If both fail, we'll fallback to black in script.js -->
+  </video>
+</div>
+
+<!-- HEADER / BIG INTRO TITLE -->
+<header>
+  <h1 class="intro-title">MARKO KONTAKT</h1>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="content">
+  <!-- UPCOMING EVENTS -->
+  <section class="events">
+    <h2 class="section-title">UPCOMING EVENTS</h2>
+
+    <div class="single-event">
+      FRI, 27/12/2024
+      <a
+              class="event-links"
+              href="https://www.instagram.com/happyhouse.project/"
+              target="_blank"
+      >Happy House SNAKE XMAS</a
+      >
+      at
+      <a
+              class="event-links"
+              href="https://www.instagram.com/loopwien/"
+              target="_blank"
+      >Loop</a
+      >,
+      Vienna, AT
     </div>
 
-    <div class="content" id="content">
+    <div class="single-event">
+      TUE, 31/12/2024
+      <a
+              class="event-links"
+              href="https://intouchsound.com/touch-of-2025-new-year-party?utm_source=kontakt"
+              target="_blank"
+      >Touch of 2025</a
+      >
+      at
+      <a
+              class="event-links"
+              href="https://maps.app.goo.gl/rVZsUSUJeongzkxe7"
+              target="_blank"
+      >Enzo</a
+      >,
+      Vienna, AT
+    </div>
+  </section>
 
-<!--    <div id="userName">-->
-<!--      MARKO KONTAKT-->
-<!--    </div>-->
+  <!-- SOCIAL LINKS -->
+  <section id="links">
+    <h2 class="section-title">FOLLOW ME</h2>
 
-    <canvas id="canvas"></canvas>
-    <div id="arrow" style="cursor: pointer; position: absolute; left: 50%; font-size: 2em;">↓️</div>
+    <a
+            class="link"
+            href="https://soundcloud.com/marko-kontakt"
+            target="_blank"
+    >
+      <i class="fab fa-soundcloud"></i>&nbsp;Soundcloud
+    </a>
+    <a
+            class="link"
+            href="https://www.instagram.com/marko.kontakt/"
+            target="_blank"
+    >
+      <i class="fab fa-instagram"></i>&nbsp;Instagram
+    </a>
+    <a
+            class="link"
+            href="https://www.tiktok.com/@marko.kontakt"
+            target="_blank"
+    >
+      <i class="fab fa-tiktok"></i>&nbsp;TikTok
+    </a>
+    <a
+            class="link"
+            href="https://www.youtube.com/@marko.kontakt"
+            target="_blank"
+    >
+      <i class="fab fa-youtube"></i>&nbsp;Youtube
+    </a>
+  </section>
 
+  <!-- TRACKS (YOUTUBE) -->
+  <section id="tracks">
+    <h2 class="section-title">LATEST VIDEOS</h2>
 
-
-    <div class="events">
-      <div class="event-title">UPCOMING EVENTS:</div>
-      <div class="single-event">
-        SAT, 07/12/2024 Birthday Party at <a class="event-links" href="https://www.instagram.com/maramax.at/">Maramax</a>, Vienna, AT
+    <div class="youtube-container">
+      <iframe
+              src="https://www.youtube.com/embed/TWCAUStaV10?si=q0RuxhbxVUdazkEp"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+      ></iframe>
+      <div class="youtube-description-container">
+        <a
+                href="https://www.youtube.com/@marko.kontakt"
+                class="youtube-link"
+                target="_blank"
+        >MARKO KONTAKT</a
+        >
+        <a
+                href="https://youtu.be/TWCAUStaV10?si=ryWvfnBuOaCnA2Wo"
+                class="youtube-video-title"
+                target="_blank"
+        >VIENNA 9PM - Christmas Funky House Mix</a
+        >
+        <span class="youtube-video-description"
+        >Disco and Funky House mixed at Vienna Christmas Market</span
+        >
       </div>
-
-      <div class="single-event">
-        FRI, 13/12/2024 PIZZA PARTY PEOPLE at <a class="event-links" href="https://www.instagram.com/enzo.wien/">ENZO</a>, Vienna, AT
-      </div>
-
-      <div class="single-event">
-        TUE, 17/12/2024 Weihnachtsferien Fest at Uni Wien/Altes AKH, Vienna, AT
-      </div>
-
-      <div class="single-event">
-        FRI, 20/12/2024 Solo Kontakt Night at <a class="event-links" href="https://www.instagram.com/donautechno/">Donau Techno</a>, Vienna, AT
-      </div>
-
-
-      <div class="single-event">
-        FRI, 27/12/2024 <a class="event-links" href="https://www.instagram.com/happyhouse.project/">Happy House Vol 2</a> at <a class="event-links" href="https://www.instagram.com/loopwien/">Loop</a>, Vienna, AT
-      </div>
-
     </div>
 
-    <div id="links">
-      <a class="link" href="https://soundcloud.com/marko-kontakt" target="_blank">
-        <i class="fab fa-soundcloud">&nbsp;</i>Soundcloud
-      </a>
-      <a class="link" href="https://www.instagram.com/marko.kontakt/" target="_blank">
-        <i class="fab fa-instagram">&nbsp;</i>Instagram
-      </a>
-      <a class="link" href="https://www.tiktok.com/@marko.kontakt" target="_blank">
-        <i class="fab fa-tiktok">&nbsp;</i>TikTok
-      </a>
-      <a class="link" href="https://www.youtube.com/@marko.kontakt" target="_blank">
-        <i class="fab fa-youtube">&nbsp;</i>Youtube
-      </a>
+    <!-- 1 -->
+    <div class="youtube-container">
+      <iframe
+              src="https://www.youtube.com/embed/5psvaktIP3Q?si=qfz_S4nJIhZww2gU"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+      ></iframe>
+      <div class="youtube-description-container">
+        <a
+                href="https://www.youtube.com/@marko.kontakt"
+                class="youtube-link"
+                target="_blank"
+        >MARKO KONTAKT</a
+        >
+        <a
+                href="https://www.youtube.com/watch?v=5psvaktIP3Q"
+                class="youtube-video-title"
+                target="_blank"
+        >TECHEYES VOL 2</a
+        >
+        <span class="youtube-video-description"
+        >hardgroove only mix</span
+        >
+      </div>
     </div>
 
-    <div id="tracks">
-
-
-      <div class="youtube-container">
-        <iframe width="144" height="81" src="https://www.youtube.com/embed/5psvaktIP3Q?si=qfz_S4nJIhZww2gU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="youtube-description-container">
-          <a href="https://www.youtube.com/@marko.kontakt" class="youtube-link">MARKO KONTAKT</a>
-          <a href="https://www.youtube.com/watch?v=5psvaktIP3Q" class="youtube-video-title">TECHEYES VOL 2</a>
-          <span class="youtube-video-description">hardgroove only mix</span>
-        </div>
+    <!-- 2 -->
+    <div class="youtube-container">
+      <iframe
+              src="https://www.youtube.com/embed/Yh-cQfNPAIw?si=zebVjxeKXBQEMjtK"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+      ></iframe>
+      <div class="youtube-description-container">
+        <a
+                href="https://www.youtube.com/@marko.kontakt"
+                class="youtube-link"
+                target="_blank"
+        >MARKO KONTAKT</a
+        >
+        <a
+                href="https://www.youtube.com/watch?v=Yh-cQfNPAIw"
+                class="youtube-video-title"
+                target="_blank"
+        >Deep House near Alpine Lake</a
+        >
+        <span class="youtube-video-description"
+        >the groove of alpine summer</span
+        >
       </div>
-
-      <div class="youtube-container">
-        <iframe width="144" height="81" src="https://www.youtube.com/embed/Yh-cQfNPAIw?si=zebVjxeKXBQEMjtK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="youtube-description-container">
-          <a href="https://www.youtube.com/@marko.kontakt" class="youtube-link">MARKO KONTAKT</a>
-          <a href="https://www.youtube.com/watch?v=Yh-cQfNPAIw" class="youtube-video-title">Deep House near Alpine Lake</a>
-          <span class="youtube-video-description">the groove of alpine summer</span>
-        </div>
-      </div>
-
-      <div class="youtube-container">
-        <iframe width="144" height="81" src="https://www.youtube.com/embed/yc00QGyOlj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="youtube-description-container">
-          <a href="https://www.youtube.com/@marko.kontakt" class="youtube-link">MARKO KONTAKT</a>
-          <a href="https://youtu.be/yc00QGyOlj8" class="youtube-video-title">TECH HOES VOL. 2 - Tech House Mix</a>
-          <span class="youtube-video-description">Feel the bass and sing them lyrics!</span>
-        </div>
-      </div>
-
-      <div class="youtube-container">
-        <iframe width="144" height="81" src="https://www.youtube.com/embed/2s29QgyMwpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="youtube-description-container">
-          <a href="https://www.youtube.com/@marko.kontakt" class="youtube-link">MARKO KONTAKT</a>
-          <a href="https://www.youtube.com/watch?v=2s29QgyMwpM" class="youtube-video-title">Wachau 4PM - Lofi and Stoner House Mix</a>
-          <span class="youtube-video-description">Take a laid-back ride through the scenic beauty of Wachau..</span>
-        </div>
-      </div>
-
-
-
-      <div class="youtube-container">
-        <iframe width="144" height="81" src="https://www.youtube.com/embed/qNS4-XiroeE?si=lcbpE22MkEvlOjfW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="youtube-description-container">
-          <a href="https://www.youtube.com/@marko.kontakt" class="youtube-link">MARKO KONTAKT</a>
-          <a href="https://www.youtube.com/watch?v=qNS4-XiroeE" class="youtube-video-title">Valencia 7AM - Techno Morning Quicky</a>
-          <span class="youtube-video-description">Hardgroove and trance bathing in spanish sun rays. Wake up!</span>
-        </div>
-      </div>
-
-      <div class="youtube-container">
-        <iframe width="144" height="81" src="https://www.youtube.com/embed/5JaA-4xxTKE?si=KTYrrFPchZQjU-IP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="youtube-description-container">
-          <a href="https://www.youtube.com/@marko.kontakt" class="youtube-link">MARKO KONTAKT</a>
-          <a href="https://www.youtube.com/embed/5JaA-4xxTKE" class="youtube-video-title">Shanghai 3AM - Techno Live Mix</a>
-          <span class="youtube-video-description">Big room, future rave and acid techno live mix, recorded at the break of the dawn at th Bund in Shanghai.</span>
-        </div>
-      </div>
-
-
-      <div class="youtube-container">
-        <iframe width="144" height="81" src="https://www.youtube.com/embed/3X_YM_S3WR8?si=FDpubm0lcR1Q3CdX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="youtube-description-container">
-          <a href="https://www.youtube.com/@marko.kontakt" class="youtube-link">MARKO KONTAKT</a>
-          <a href="https://www.youtube.com/watch?v=3X_YM_S3WR8" class="youtube-video-title">TECHYES VOL 1 - Hardgroove, Trance and Breaks Mix</a>
-          <span class="youtube-video-description">Explore the world of TECHYES, because why the tech no?</span>
-        </div>
-      </div>
-
-      <div class="youtube-container">
-        <iframe width="144" height="81" src="https://www.youtube.com/embed/Yh-cQfNPAIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="youtube-description-container">
-          <a href="https://www.youtube.com/@marko.kontakt" class="youtube-link">MARKO KONTAKT</a>
-          <a href="https://www.youtube.com/watch?v=Yh-cQfNPAIw" class="youtube-video-title">Deep and Ibiza House near Alpine Lake</a>
-          <span class="youtube-video-description">Nature meets the groove. 🌊🌲🎶</span>
-        </div>
-      </div>
-
-
-      <div class="youtube-container">
-        <iframe width="144" height="81" src="https://www.youtube.com/embed/IgcijMYp28c?si=dp_SoKc-2-PqW89E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="youtube-description-container">
-          <a href="https://www.youtube.com/@marko.kontakt" class="youtube-link">MARKO KONTAKT</a>
-          <a href="https://www.youtube.com/watch?v=IgcijMYp28c" class="youtube-video-title">DEEPER - Sunset old school deep house mix</a>
-          <span class="youtube-video-description">Deep house sunset from the rooftops of Vienna!</span>
-        </div>
-      </div>
-
-      <div class="youtube-container">
-        <iframe width="144" height="81" src="https://www.youtube.com/embed/PmkxkGDsyeY?si=7Ahpxt_iiY0T_f_r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="youtube-description-container">
-          <a href="https://www.youtube.com/@marko.kontakt" class="youtube-link">MARKO KONTAKT</a>
-          <a href="https://www.youtube.com/watch?v=PmkxkGDsyeY" class="youtube-video-title">TECH HOES I - Tech House Live Mix</a>
-          <span class="youtube-video-description">Originals, Remixes and Trippy Visuals</span>
-        </div>
-      </div>
-
-      <div class="youtube-container">
-        <iframe width="144" height="81" src="https://www.youtube.com/embed/CGQhJ0lpVDU?si=xGoYBeGIUnmxjekY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div class="youtube-description-container">
-          <a href="https://www.youtube.com/@radiorudina" class="youtube-link">Radio Rudina</a>
-          <a href="https://www.youtube.com/watch?v=CGQhJ0lpVDU" class="youtube-video-title">Radio Rudina | Classic House Mix</a>
-          <span class="youtube-video-description">Live sesh at Radio Rudina's Mahlerstrasse Studio</span>
-        </div>
-      </div>
-
- </div>
     </div>
-  </body>
+
+    <!-- 3 -->
+    <div class="youtube-container">
+      <iframe
+              src="https://www.youtube.com/embed/yc00QGyOlj8"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+      ></iframe>
+      <div class="youtube-description-container">
+        <a
+                href="https://www.youtube.com/@marko.kontakt"
+                class="youtube-link"
+                target="_blank"
+        >MARKO KONTAKT</a
+        >
+        <a
+                href="https://youtu.be/yc00QGyOlj8"
+                class="youtube-video-title"
+                target="_blank"
+        >TECH HOES VOL. 2 - Tech House Mix</a
+        >
+        <span class="youtube-video-description"
+        >Feel the bass and sing them lyrics!</span
+        >
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="youtube-container">
+      <iframe
+              src="https://www.youtube.com/embed/2s29QgyMwpM"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+      ></iframe>
+      <div class="youtube-description-container">
+        <a
+                href="https://www.youtube.com/@marko.kontakt"
+                class="youtube-link"
+                target="_blank"
+        >MARKO KONTAKT</a
+        >
+        <a
+                href="https://www.youtube.com/watch?v=2s29QgyMwpM"
+                class="youtube-video-title"
+                target="_blank"
+        >Wachau 4PM - Lofi and Stoner House Mix</a
+        >
+        <span class="youtube-video-description"
+        >Take a laid-back ride through the scenic beauty of Wachau..</span
+        >
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="youtube-container">
+      <iframe
+              src="https://www.youtube.com/embed/qNS4-XiroeE?si=lcbpE22MkEvlOjfW"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+      ></iframe>
+      <div class="youtube-description-container">
+        <a
+                href="https://www.youtube.com/@marko.kontakt"
+                class="youtube-link"
+                target="_blank"
+        >MARKO KONTAKT</a
+        >
+        <a
+                href="https://www.youtube.com/watch?v=qNS4-XiroeE"
+                class="youtube-video-title"
+                target="_blank"
+        >Valencia 7AM - Techno Morning Quicky</a
+        >
+        <span class="youtube-video-description"
+        >Hardgroove and trance bathing in spanish sun rays. Wake up!</span
+        >
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="youtube-container">
+      <iframe
+              src="https://www.youtube.com/embed/5JaA-4xxTKE?si=KTYrrFPchZQjU-IP"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+      ></iframe>
+      <div class="youtube-description-container">
+        <a
+                href="https://www.youtube.com/@marko.kontakt"
+                class="youtube-link"
+                target="_blank"
+        >MARKO KONTAKT</a
+        >
+        <a
+                href="https://www.youtube.com/watch?v=5JaA-4xxTKE"
+                class="youtube-video-title"
+                target="_blank"
+        >Shanghai 3AM - Techno Live Mix</a
+        >
+        <span class="youtube-video-description"
+        >Big room, future rave and acid techno live mix.</span
+        >
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="youtube-container">
+      <iframe
+              src="https://www.youtube.com/embed/3X_YM_S3WR8?si=FDpubm0lcR1Q3CdX"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+      ></iframe>
+      <div class="youtube-description-container">
+        <a
+                href="https://www.youtube.com/@marko.kontakt"
+                class="youtube-link"
+                target="_blank"
+        >MARKO KONTAKT</a
+        >
+        <a
+                href="https://www.youtube.com/watch?v=3X_YM_S3WR8"
+                class="youtube-video-title"
+                target="_blank"
+        >TECHYES VOL 1 - Hardgroove, Trance and Breaks Mix</a
+        >
+        <span class="youtube-video-description"
+        >Explore the world of TECHYES, because why the tech no?</span
+        >
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="youtube-container">
+      <iframe
+              src="https://www.youtube.com/embed/Yh-cQfNPAIw"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+      ></iframe>
+      <div class="youtube-description-container">
+        <a
+                href="https://www.youtube.com/@marko.kontakt"
+                class="youtube-link"
+                target="_blank"
+        >MARKO KONTAKT</a
+        >
+        <a
+                href="https://www.youtube.com/watch?v=Yh-cQfNPAIw"
+                class="youtube-video-title"
+                target="_blank"
+        >Deep and Ibiza House near Alpine Lake</a
+        >
+        <span class="youtube-video-description"
+        >Nature meets the groove. 🌊🌲🎶</span
+        >
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="youtube-container">
+      <iframe
+              src="https://www.youtube.com/embed/IgcijMYp28c?si=dp_SoKc-2-PqW89E"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+      ></iframe>
+      <div class="youtube-description-container">
+        <a
+                href="https://www.youtube.com/@marko.kontakt"
+                class="youtube-link"
+                target="_blank"
+        >MARKO KONTAKT</a
+        >
+        <a
+                href="https://www.youtube.com/watch?v=IgcijMYp28c"
+                class="youtube-video-title"
+                target="_blank"
+        >DEEPER - Sunset old school deep house mix</a
+        >
+        <span class="youtube-video-description"
+        >Deep house sunset from the rooftops of Vienna!</span
+        >
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="youtube-container">
+      <iframe
+              src="https://www.youtube.com/embed/PmkxkGDsyeY?si=7Ahpxt_iiY0T_f_r"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+      ></iframe>
+      <div class="youtube-description-container">
+        <a
+                href="https://www.youtube.com/@marko.kontakt"
+                class="youtube-link"
+                target="_blank"
+        >MARKO KONTAKT</a
+        >
+        <a
+                href="https://www.youtube.com/watch?v=PmkxkGDsyeY"
+                class="youtube-video-title"
+                target="_blank"
+        >TECH HOES I - Tech House Live Mix</a
+        >
+        <span class="youtube-video-description"
+        >Originals, Remixes, and Trippy Visuals</span
+        >
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="youtube-container">
+      <iframe
+              src="https://www.youtube.com/embed/CGQhJ0lpVDU?si=xGoYBeGIUnmxjekY"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+      ></iframe>
+      <div class="youtube-description-container">
+        <a
+                href="https://www.youtube.com/@radiorudina"
+                class="youtube-link"
+                target="_blank"
+        >Radio Rudina</a
+        >
+        <a
+                href="https://www.youtube.com/watch?v=CGQhJ0lpVDU"
+                class="youtube-video-title"
+                target="_blank"
+        >Radio Rudina | Classic House Mix</a
+        >
+        <span class="youtube-video-description"
+        >Live sesh at Radio Rudina's Mahlerstrasse Studio</span
+        >
+      </div>
+    </div>
+  </section>
+</main>
+</body>
 </html>
